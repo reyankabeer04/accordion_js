@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.accordion{
+    font-family: arial;
+    gap: 20px;
+    padding: 20px;
+}
+.accordionTitle{
+    background-color: teal;
+    color: aliceblue;
+    padding: 10px;
+    transition:  1s ;
+    cursor: pointer;
+    
+}
+
+.accordionTitle:hover{
+    background-color: #444;
+}
+
+.accordionContent{
+    padding: 20px;
+    background-color: aliceblue;
+    display: none;
+}
+
+.accordionItems.active .accordionContent{
+    display: block;
+    /* transition: 3s; */
+}
